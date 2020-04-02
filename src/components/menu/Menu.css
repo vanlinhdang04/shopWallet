@@ -1,0 +1,80 @@
+.leftMenu {
+    margin-right: auto;
+}
+.rightMenu {
+    margin-left: auto;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu:hover a {
+    color: black;
+    text-decoration: none;
+}
+.menu:hover li:hover a {
+    color: red;
+    font-size: larger;
+    position: relative;
+    animation: hoverMenu 2s ease-out ;
+    -webkit-animation: hoverMenu 2s ease-out ;
+    -moz-animation: hoverMenu 2s ease-out ;
+    -o-animation: hoverMenu 2s ease-out ;
+}
+.menu:hover .bar {
+    color: black;
+}
+
+body {
+    font-family: Montserrat,sans-serif;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: small;
+}
+.menu {
+    opacity: 1;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid thistle;
+}
+.menu:hover {
+    background: white;
+    color: black;
+}
+.talign {
+    text-align: center;
+}
+.logo {
+    margin: 0 auto;
+}
+@keyframes hoverMenu {
+    from {bottom: 0px;}
+    to {bottom: 10px;}
+    from{bottom: 10px;}
+    to{bottom: 5px;}
+}
+@-webkit-keyframes hoverMenu {
+    from {bottom: 0px;}
+    to {bottom: 10px;}
+    from{bottom: 10px;}
+    to{bottom: 5px;}
+}
+@-moz-keyframes hoverMenu {
+    from {bottom: 0px;}
+    to {bottom: 10px;}
+    from{bottom: 10px;}
+    to{bottom: 10px;}
+}
+@-o-keyframes hoverMenu {
+    from {bottom: 0px;}
+    to {bottom: 10px;}
+    from{bottom: 10px;}
+    to{bottom: 10px;}
+}
+.bar {
+    color: white;
+}

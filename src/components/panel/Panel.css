@@ -1,0 +1,40 @@
+.panel {
+    border-bottom: 0.5px solid #BDB76B;
+    /* border-color: rgba(red, green, blue, 25) */
+}
+.sectionPanel {
+    /* padding: 80px 0; */
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 90px 0;
+}
+.FeatureText {
+    text-align: center;
+}
+.FeatureText_contentWrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.FeatureText_content {
+    max-width: 430px;
+    margin: 0 auto;
+}
+.SectionHeader {
+    margin-top: -0.325em;
+}
+.fontText {
+    font-size: 20px;
+}
+.Heading {
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1c1b1b;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.fontHead {
+    font-size: 12px;
+}

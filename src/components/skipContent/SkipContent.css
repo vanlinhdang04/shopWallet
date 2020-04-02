@@ -1,0 +1,23 @@
+.skipContent {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div > p {
+    color: white;
+    text-align: center;
+    font-size: x-small;
+    font-family: Montserrat,sans-serif;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 15px;
+    /* position: absolute;;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%); */
+}
