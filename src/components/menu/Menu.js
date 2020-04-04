@@ -4,13 +4,26 @@ import './Menu.css'
 import logo from '../../images/logo.jpg'
 
 class Menu extends Component {
+    constructor(props) {
+        super(props);
+        this.menuFIxed = this.menuFIxed.bind(this);
+    }
+    
+    menuFIxed(){
+        if(window.pageYOffset>=40){
+            this.rootMenu.classList='scrollMenu';
+        }
+        else {
+            this.rootMenu.classList='menu';
+        }
+    }
     componentDidMount() {
-        this.rootMenu = ReactDOM.findDOMNode(this); // component root
-        this.logoImage = this.rootMenu.querySelector(".logo"); // component div logo
+        this.rootMenu = ReactDOM.findDOMNode(this); // component menu
+        this.menu_a = this.rootMenu.querySelectorAll(".mn"); // thẻ a trong menu
+        window.addEventListener('scroll', this.menuFIxed);
     }
     render() {
         return (
-            
             <div className="menu">
                     <nav className ="navbar navbar-expand-sm">
                         {/* button toggle menu */}
@@ -49,6 +62,9 @@ class Menu extends Component {
                                     </li>
                                     <li className="nav-link cartIcon">
                                         <a href="# ">CART (0)</a>
+                                    </li>
+                                    <li className="nav-link cartIcon">
+                                        <a href="# ">SIGN IN</a>
                                     </li>
                                 </ul>
                             </div>

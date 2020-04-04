@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './Slideshow.css';
+import Menu from '../menu/Menu';
 
+// component tạo slide ảnh
 class SlideShow extends Component {
     constructor(prop) {
         super (prop);
@@ -84,6 +86,7 @@ class SlideShow extends Component {
     render () {
         return(
             <div className="lp-slideshow">
+                <Menu />
                 <div className="containerIA">
                     {/* Chay map() dua anh len */}
                     { this.props.input.map((image,index) => {
@@ -103,25 +106,26 @@ class SlideShow extends Component {
                     {/* Button prev va next */}
                     <span className="prev" onClick={this.backward}>❮</span>
                     <span className="next" onClick={this.forward}>❯</span>
+
+                    {/* Cac dot chuyen anh */}
+                    <div className="dot-container">
+                        {
+                            this.props.input.map((_, index) => {
+                            return (
+                                <span
+                                key={index}
+                                className={
+                                    `dot ${this.state.slideIndex === index ? "active" : ""}`
+                                }
+                                onClick={() => this.setSlideIndex(index)}
+                                >
+                                </span>
+                            )
+                            })
+                        }
+                    </div>
                 </div>
 
-                {/* Cac dot chuyen anh */}
-                <div className="dot-container">
-                    {
-                        this.props.input.map((_, index) => {
-                        return (
-                            <span
-                            key={index}
-                            className={
-                                `dot ${this.state.slideIndex === index ? "active" : ""}`
-                            }
-                            onClick={() => this.setSlideIndex(index)}
-                            >
-                            </span>
-                        )
-                        })
-                    }
-                </div>
             </div>
         );
     }

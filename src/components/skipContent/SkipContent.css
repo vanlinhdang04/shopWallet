@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
 }
-div > p {
+.skipContent > p {
     color: white;
     text-align: center;
     font-size: x-small;

@@ -4,7 +4,7 @@
 .rightMenu {
     margin-left: auto;
 }
-a {
+.menu a {
     color: white;
     text-decoration: none;
 }
@@ -16,10 +16,19 @@ a {
     color: red;
     font-size: larger;
     position: relative;
-    animation: hoverMenu 2s ease-out ;
+    /* animation: hoverMenu 2s ease-out ;
     -webkit-animation: hoverMenu 2s ease-out ;
     -moz-animation: hoverMenu 2s ease-out ;
-    -o-animation: hoverMenu 2s ease-out ;
+    -o-animation: hoverMenu 2s ease-out ; */
+}
+.scrollMenu li:hover a {
+    color: red;
+    font-size: larger;
+    position: relative;
+    /* animation: hoverMenu 2s ease-out ;
+    -webkit-animation: hoverMenu 2s ease-out ;
+    -moz-animation: hoverMenu 2s ease-out ;
+    -o-animation: hoverMenu 2s ease-out ; */
 }
 .menu:hover .bar {
     color: black;
@@ -28,18 +37,17 @@ a {
 body {
     font-family: Montserrat,sans-serif;
     transition: color 0.2s ease-in-out;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     font-size: small;
 }
 .menu {
-    opacity: 1;
-    position: absolute;
-    top: 6%;
-    left: 0;
     z-index: 100;
     width: 100%;
     border-bottom: 1px solid thistle;
+    position: absolute;
+    left: 0;
+    transition: ease-in-out background-color 0.6s;
 }
 .menu:hover {
     background: white;
@@ -77,4 +85,17 @@ body {
 }
 .bar {
     color: white;
+}
+.scrollMenu {
+    background: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid thistle;
+    width: 100%;
+    z-index: 100;
+}
+.scrollMenu a{
+    color: black;
+    text-decoration: none;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Panel.css'
 
+// component tạo bảng chữ 
 class Panel extends Component {
     render() {
         return (

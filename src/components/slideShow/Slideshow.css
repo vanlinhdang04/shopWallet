@@ -7,6 +7,7 @@
 
 .lp-slideshow {
   width: 100%;
+  position: relative;
 }
 .lp-slideshow>.containerIA {
     position: relative;
@@ -19,7 +20,7 @@
     position: absolute;
     margin: auto;
     opacity: 0;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease ;
     -webkit-transition: opacity 0.6s ease;
     -moz-transition: opacity 0.6s ease;
     -o-transition: opacity 0.6s ease;
@@ -70,17 +71,17 @@
   border-radius: 0 3px 3px 0;
 }
 
-.lp-slideshow>.dot-container {
+.dot-container {
   text-align: center;
   margin: 1rem auto;
   position: absolute;
-  top: 130%;
-  left: 49%;
+  top: 90%;
+  left: 5%;
 }
 
-.lp-slideshow>.dot-container>.dot {
-  height: 15px;
-  width: 15px;
+.dot-container>.dot {
+  height: 10px;
+  width: 10px;
   margin: 0 0.4rem;
   background-color: #bbb;
   border-radius: 50%;
