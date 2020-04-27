@@ -25,7 +25,7 @@ class Menu extends Component {
     render() {
         return (
             <div className="menu">
-                    <nav className ="navbar navbar-expand-sm">
+                    <nav className ="navbar navbar-expand-lg">
                         {/* button toggle menu */}
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".menuNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="fas fa-bars bar"></span>

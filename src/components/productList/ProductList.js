@@ -23,21 +23,28 @@ class ProductList extends Component {
     };
     render() {
         return (
-            <div className="row">
-                {/* Chay map cac san pham */}
-                {
-                    this.state.product.map((product,index) => {
-                        return(
-                            <Product 
-                                key={index}
-                                productImage={product.image} 
-                                productAlt={product.alt}
-                                productPrice={product.price}
-                                productName={product.name}
-                            />
-                        )
-                    })
-                }
+            <div>
+                <div className="row">
+                    {/* Chay map cac san pham */}
+                    {
+                        this.state.product.map((product,index) => {
+                            return(
+                                <Product 
+                                    key={index}
+                                    productImage={product.image} 
+                                    productAlt={product.alt}
+                                    productPrice={product.price}
+                                    productName={product.name}
+                                />
+                            )
+                        })
+                    }
+                </div>
+                <div className="container">
+                    <div className="SectionFooter">
+                        <button className="button button--primary" href="# ">VEIW ALL PRODUCTS</button>
+                    </div>
+                </div>
             </div>
         );
     }

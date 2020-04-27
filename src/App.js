@@ -1,7 +1,6 @@
 import React , { Component } from 'react';
 import './App.css';
 import SkipContent from './components/skipContent/SkipContent'
-import Menu from './components/menu/Menu'
 import SlideShow from './components/slideShow/SlideShow'
 import img1 from './images/background.jpg'
 import img2 from './images/background_02.jpg'

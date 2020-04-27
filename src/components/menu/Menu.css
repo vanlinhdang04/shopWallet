@@ -30,7 +30,7 @@
     -moz-animation: hoverMenu 2s ease-out ;
     -o-animation: hoverMenu 2s ease-out ; */
 }
-.menu:hover .bar {
+.menu:hover,.scrollMenu:hover .bar {
     color: black;
 }
 
@@ -83,8 +83,11 @@ body {
     from{bottom: 10px;}
     to{bottom: 10px;}
 }
-.bar {
+.menu .bar {
     color: white;
+}
+.scrollMenu .bar {
+    color: black;
 }
 .scrollMenu {
     background: white;
