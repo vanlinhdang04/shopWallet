@@ -8,7 +8,8 @@ import img3 from './images/background_03.jpg'
 import img4 from './images/background_04.webp'
 import Panel from './components/panel/Panel';
 import ProductList from './components/productList/ProductList'
-
+import FeaturedProduct from './components/featuredProduct/FeaturedProduct'
+import Collection from './components/collection/Collection'
 
 const collection = [
     { src: img1 , alt : 'image01'},
@@ -30,6 +31,9 @@ class App extends Component {
                 <Panel content="CURRENT LEAD TIME ON NEW ORDER IS 6-8 WEEKS"/>
                 <Panel content="LEATHER WALLETS" header="FEATURED COLLECTION" />
                 <ProductList />
+                <Panel content="FEATURED PRODUCT" />
+                <FeaturedProduct />
+                <Collection />
             </div>
             
             
